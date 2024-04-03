@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Book Now</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html"><img src="logo.png" alt="Logo"></a>
+        <nav id="topMenu">
+            <a href="aboutTheIsland.html">About the Island</a>
+            <a href="thingsToDo.html">Things To Do</a>
+            <a href="whereToStay.html">Places To Stay</a>
+            <a href="howToGetAround.html">Getting Around</a>
+            <a href="bookNow.html" id="bookNow">Book Now</a>
+        </nav>
+    </header>
+
+    <main id="bookNowMain">
+        <form>
+            <fieldset>
+                <legend>Getting Here</legend>
+                
+                <div><label for="departureCity">Departure City: </label>
+                <input type="text" id="departureCity"></div>
+                
+                <div><label for="arrivalCity">Arrival City: </label>
+                <input type="text" id="arrivalCity" placeholder="Taniti City"></div>
+                <div><label for="arrivalDate">Arrival Date: </label><input type="date" id="arrivalDate"></div>
+                <div><label for="departureDate">Departure Date: <input type="date" id="departureDate"></label></div>
+                <button type="submit">Search For Flights</button>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Staying Here</legend>
+                <div><label for="hotelType">Lodging Type: </label>
+                        <select id="hotelType">
+                            <option value="fourStar">Four Star Hotel</option>
+                            <option value="familyOwned">Family Owned Hotel</option>
+                            <option value="bandbs">Bed & Breakfast</option>
+                            <option value="hostel">Hostel</option>
+                        </select></div>
+                <div><label for="fromDate">From: </label><input type="date" id="fromDate"></div>
+                <div><label for="toDate">To: </label><input type="date" id="toDate"></div>
+                <button type="submit">Search for Lodging</button>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Getting Around</legend>
+                <div><label for="transportation">Transportation Type: </label>
+                    <select id="transportation">
+                        <option value="rentalCar">Rental Car</option>
+                        <option value="bikeRental">Bike Rental</option>
+                    </select></div>
+            <div><label for="fromDate">From: </label><input type="date" id="fromDate"></div>
+            <div><label for="toDate">To: </label><input type="date" id="toDate"></div>
+            <button type="submit">Search for Transportation</button>
+            </fieldset>
+        </form>
+    </main>
+
+
+    <footer>
+        <nav>
+            <a href="press.html">Press</a>
+            <a href="contact.html">Contact</a>
+            <a href="Sitemap.html">Sitemap</a>
+        </nav>
+    </footer>
+    
+</body>
+</html>
